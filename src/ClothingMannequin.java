@@ -33,4 +33,7 @@ public class ClothingMannequin {
     public void setHasHeadAccessory(boolean hasHeadAccessory) {
         this.hasHeadAccessory = hasHeadAccessory;
     }
+    public String displayInfo() {
+        return "Shirt:" + getShirt() + "\n Pants: " + getPants() + "Shoes: " + getShoes();
+    }
 }
