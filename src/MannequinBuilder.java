@@ -1,3 +1,4 @@
+// This code works perfectly without director class (+ as a test how it works usually)
 public class MannequinBuilder {
     private String shirt;
     private String pants;
@@ -12,14 +13,26 @@ public class MannequinBuilder {
     public String getShirt() {
         return shirt;
     }
+    public void setShirt(String shirt) {
+        this.shirt = shirt;
+    }
     public String getPants() {
         return pants;
+    }
+    public void setPants(String pants) {
+        this.pants = pants;
     }
     public String getShoes() {
         return shoes;
     }
+    public void setShoes(String shoes) {
+        this.shoes = shoes;
+    }
     public boolean isHasHeadAccessory() {
         return hasHeadAccessory;
+    }
+    public void setHasHeadAccessory(boolean hasHeadAccessory) {
+        this.hasHeadAccessory = hasHeadAccessory;
     }
     public static class Builder {
         private String shirt;
